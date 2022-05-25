@@ -1,0 +1,20 @@
+{
+  "name": "visma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "date-holidays": "^3.15.1",
+    "dayjs": "^1.11.2",
+    "moment": "^2.29.3",
+    "moment-holiday": "^1.5.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "moment-working-days": "^0.1.8"
+  }
+}
