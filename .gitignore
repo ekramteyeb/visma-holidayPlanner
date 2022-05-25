@@ -2,3 +2,4 @@ node_modules
 locale
 locale/moment-holiday.js
 tryIndex.js
+indexCopy.js

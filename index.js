@@ -3,27 +3,11 @@ import momenth from 'moment-holiday'
 import WorkingDays  from 'moment-working-days'
 import Holidays from 'date-holidays'
 
-//working days
-const momentWorkingDays = new WorkingDays()
-
-//holidays
-const hd = new Holidays()
-hd.init('fi')
 
 
-
-
+//main function take two start and end arguments(date string 'YYYYMMDD' format)
+//return if successful number of days else 'valid input message'
 function holidayPlanner(start , end){
-
-    const finishHD = hd.getHolidays('2022')
-    
-
-    let inputDate = finishHD[0].date
-    let st = moment(inputDate)
-
-
-    let inputDateFormated =  st.format('YYYYMMDD')
-
 
     let isValidSpan = checkValidSpan(start , end)
     let isValidHolidayPeriod = checkHodlidayPeriod(start , end)
@@ -33,17 +17,16 @@ function holidayPlanner(start , end){
         return 'invalid input please provide, valid input'
     }else{
         
-        //number of public holidays from starting given point  to the  end point 
+        //number of public holidays from starting point to the  end point 
         let numberOfHolidays = moment(start).holidaysBetween(end);
-
-        //number of working day  from start to end that an employee can use to go for holiday
+        
+        //working days
+        const momentWorkingDays = new WorkingDays()
+        //number of working days  from start to end that an employee can use to go for holiday
         let workingdays = momentWorkingDays.getWorkingDays([start , end])
        
-        //console.log(numberOfHolidays, 'number of holidays')
-        //console.log(workingdays, 'working days')
-        //console.log(numberOfHolidays, 'national holidays')
-
-        //returns the 
+    
+        //returns the number of days 
         return workingdays - numberOfHolidays.length
     }
 }
