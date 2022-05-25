@@ -27,3 +27,7 @@ many days a person can use to be able to consume his(her) holiday during that gi
 * run the index.js file using node like 
     node index.js from terminal 
 * the output will be logged to console 
+
+
+# Limitations : 
+* Currently working only for US country and fetchs calculates list of holidays in US.
