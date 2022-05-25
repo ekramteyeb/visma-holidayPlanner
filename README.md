@@ -30,4 +30,4 @@ many days a person can use to be able to consume his(her) holiday during that gi
 
 
 # Limitations : 
-* Currently working only for US country and fetchs calculates list of holidays in US.
+* Currently working only for US country and calculates list of holidays in US.
