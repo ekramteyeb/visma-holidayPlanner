@@ -21,13 +21,17 @@ many days a person can use to be able to consume his(her) holiday during that gi
 
 # Language : Javascript 
 
-# How to run 
-* insert two date time strings as input and call holidayPlanner function  in the index.js file like : 
+# How to run : two options 
+* * One
+* insert two date time strings as input and call holidayPlanner function  in the indexConsole.js file like : 
     holidayPlanner('YYYYMMDD', 'YYYYMMDD')
-* run the index.js file using node like 
-    node index.js from terminal 
+* run the indexConsole.js file using node like 
+    node indexConsole.js from terminal 
 * the output will be logged to console 
+
+* * Two 
+* It is also possible to test the app from UI , since there is html file included
 
 
 # Limitations : 
-* Currently working only for US country and calculates list of holidays in US.
+* Currently it is working only for US country and calculates list of holidays in US.
