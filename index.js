@@ -14,7 +14,7 @@ function holidayPlanner(){
     //N.B isValidSpan should be checked first then valid holiday period 
     if(!(isValidSpan && isValidHolidayPeriod)){
         //return 'invalid input please provide, valid input'
-        response =  'Invalid input, please provide valid dates'
+        response =  '  Invalid input, please provide valid dates'
         document.getElementById('result').innerHTML = response
         document.getElementById('demo').innerHTML = ''
         return response
