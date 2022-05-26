@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.js"></script>
+    <script src="index.js"></script>
+    <title>Holiday Planner</title>
+</head>
+<body>
+    <div class="container col-6">
+        <h1>Holiday Planner  : VISMA</h1>
+
+        <p id="result"  style="background-color:red; color:white;"></p>
+        <p id="demo" style="background-color:green; color:white"></p>
+        <div>
+            <form action="">
+                <div class="form-group">
+                  <label for="startDate">Start</label>
+                  <input type="date" class="form-control" id="startDate" aria-describedby="startDate" placeholder="Start date">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="endDate">End</label>
+                    <input type="date" class="form-control" id="endDate" aria-describedby="endDate"  placeholder="End date">
+                  </div>
+                <br>
+                <button type="button" class="btn btn-primary" onclick="holidayPlanner()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdn.rawgit.com/kodie/moment-holiday/v1.2.0/moment-holiday.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-business-days/1.2.0/index.js" integrity="sha512-SOgJ28iBwBLZWvQUbMVFcvdGOTCDVmaSshVd+e/o60PDJMQB1TcMSVV0sh2ZJqp2rmZt+I2ir+VMIPY8Ng172A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
