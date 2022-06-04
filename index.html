@@ -19,8 +19,8 @@
     <title>Holiday Planner</title>
 </head>
 <body>
-    <div class="container col-6 pt-5">
-        <h1 class="bg-info p-3 text-center">HOLIDAY PLANNER VISMA</h1>
+    <div class="container bg-primary col-6 pt-3 pb-5 rounded">
+        <h1 class="bg-info p-4 text-center rounded">HOLIDAY PLANNER VISMA</h1>
 
         <p id="result" class="col-10  mx-auto" style="background-color:red; color:white;"></p>
         <p id="demo" class="col-10  mx-auto" style="background-color:green; color:white"></p>
@@ -36,17 +36,24 @@
                     <input type="date" class="form-control" id="endDate" aria-describedby="endDate"  placeholder="End date">
                   </div>
                 <br>
-                <button type="button" class="btn btn-primary mx-auto" onclick="holidayPlanner()">Submit</button>
+                <button type="button" class="btn btn-info mx-auto" onclick="holidayPlanner()">Submit</button>
             </form> 
         </div>
     </div>
     <style>
-      @media only screen and (max-width: 600px) {
+      .container{
+        margin-top: 5px;
+      }
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
         body {
           background-color: lightblue;
         }
         .container{
-          width: fit-content;
+          margin-top: 0px;
         }
       }
 
