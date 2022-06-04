@@ -20,28 +20,37 @@
 </head>
 <body>
     <div class="container col-6 pt-5">
-        <h1 class="bg-info p-3">Holiday Planner  : VISMA</h1>
+        <h1 class="bg-info p-3 text-center">HOLIDAY PLANNER VISMA</h1>
 
         <p id="result" class="col-10  mx-auto" style="background-color:red; color:white;"></p>
         <p id="demo" class="col-10  mx-auto" style="background-color:green; color:white"></p>
         <div>
             <form action="" class="col-10 mx-auto">
                 <div class="form-group">
-                  <label for="startDate">Start</label>
+                  <label for="startDate">Start date</label>
                   <input type="date" class="form-control" id="startDate" aria-describedby="startDate" placeholder="Start date">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="endDate">End</label>
+                    <label for="endDate">End date</label>
                     <input type="date" class="form-control" id="endDate" aria-describedby="endDate"  placeholder="End date">
                   </div>
                 <br>
-                <button type="button" class="btn btn-primary" onclick="holidayPlanner()">Submit</button>
-            </form>
+                <button type="button" class="btn btn-primary mx-auto" onclick="holidayPlanner()">Submit</button>
+            </form> 
         </div>
     </div>
+    <style>
+      @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+        .container{
+          width: fit-content;
+        }
+      }
 
-    
+    </style>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script>dayjs().format()</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>

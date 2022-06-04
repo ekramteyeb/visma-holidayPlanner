@@ -6,7 +6,6 @@ function holidayPlanner(){
     let start =  document.getElementById('startDate').value; 
     let end =  document.getElementById('endDate').value; 
     
-    
     let isValidSpan = checkValidSpan(start , end)
     let isValidHolidayPeriod = checkHodlidayPeriod(start , end)
     let response = ''
@@ -71,8 +70,6 @@ async function getWorkingDays(start , end)
         return workingDays
     }
 }
-
-
 //check if the given times span is <= 50 days  and 
 // they are in chronological order
 function checkValidSpan(start, end){
