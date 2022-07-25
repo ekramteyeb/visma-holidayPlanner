@@ -34,4 +34,4 @@ many days a person can use to be able to consume his(her) holiday during that gi
 
 
 # Limitations : 
-* Currently it is working only for US country and calculates list of holidays in US.
+* Currently it is working only for US country and calculates list of holidays in US..
